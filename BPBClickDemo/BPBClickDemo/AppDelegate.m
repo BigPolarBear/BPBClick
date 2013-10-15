@@ -16,15 +16,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    id<IBPBClickService> serviceUmeng = [[BPBClickServiceUmeng alloc] initWithAppKey:@"xxx"];
-    id<IBPBClickService> serviceTalkingData = [[BPBClickServiceTalkingData alloc] initWithAppKey:@"xxx"];
+    // 1. 创建需要的统计服务
+    id<IBPBClickService> serviceUmeng = [[BPBClickServiceUmeng alloc] initWithAppKey:@"525d62a956240b4bce01789c"];
+    id<IBPBClickService> serviceTalkingData = [[BPBClickServiceTalkingData alloc] initWithAppKey:@"B083E38FCCA43F368148464F2CEFE91E"];
 
-    // 添加统计服务
+    // 2. 添加统计服务到BPBClick
     [BPBClick addClickService:serviceUmeng];
     [BPBClick addClickService:serviceTalkingData];
-    // 设置渠道
+    // 3. 设置渠道
+#ifdef DEBUG
+    [BPBClick setChannelId:@"Debug"];
+#else
     [BPBClick setChannelId:@"App Store"];
-    // 启动服务
+#endif
+    // 4. 启动服务
     [BPBClick start];
 
     // Override point for customization after application launch.

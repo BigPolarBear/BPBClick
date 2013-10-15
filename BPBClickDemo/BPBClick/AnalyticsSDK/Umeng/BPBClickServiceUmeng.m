@@ -35,7 +35,7 @@
 #pragma mark （可选）第2步：设置渠道
 -(void)setChannelId:(NSString*)channelId
 {
-    self.channelId = channelId;
+    _channelId = channelId;
 }
 
 #pragma mark （必选）第3步：启动统计SDK

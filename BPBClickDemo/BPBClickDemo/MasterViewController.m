@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "BPBClick.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -20,6 +21,16 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [BPBClick trackPageBegin:NSStringFromClass([self class])];
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [BPBClick trackPageEnd:NSStringFromClass([self class])];
 }
 
 - (void)viewDidLoad
@@ -107,6 +118,13 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+
+
+        [BPBClick event:@"show_detail"
+                  label:@"segue"
+             attributes:^NSDictionary *{
+                 return @{@"indexPath":[NSString stringWithFormat:@"%d",indexPath.row]};
+             }];
     }
 }
 

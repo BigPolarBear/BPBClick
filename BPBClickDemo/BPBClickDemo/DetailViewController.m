@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "BPBClick.h"
 
 @interface DetailViewController ()
 - (void)configureView;
@@ -15,6 +16,17 @@
 @implementation DetailViewController
 
 #pragma mark - Managing the detail item
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [BPBClick trackPageBegin:NSStringFromClass([self class])];
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [BPBClick trackPageEnd:NSStringFromClass([self class])];
+}
+
 
 - (void)setDetailItem:(id)newDetailItem
 {

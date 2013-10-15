@@ -17,3 +17,31 @@
 - Optional:	CoreTelephony.framework
 - Optional:	AdSupport.framework
 
+
+#添加代码
+
+在AppDelegate的didFinishLaunchingWithOptions里添加如下代码
+
+	    // 1. 创建需要的统计服务
+	    id<IBPBClickService> serviceUmeng = [[BPBClickServiceUmeng alloc] initWithAppKey:@"525d62a956240b4bce01789c"];
+	    id<IBPBClickService> serviceTalkingData = [[BPBClickServiceTalkingData alloc] initWithAppKey:@"B083E38FCCA43F368148464F2CEFE91E"];
+	
+	    // 2. 添加统计服务到BPBClick
+	    [BPBClick addClickService:serviceUmeng];
+	    [BPBClick addClickService:serviceTalkingData];
+	    // 3. 设置渠道
+	#ifdef DEBUG
+	    [BPBClick setChannelId:@"Debug"];
+	#else
+	    [BPBClick setChannelId:@"App Store"];
+	#endif
+	    // 4. 启动服务
+	    [BPBClick start];
+	    
+	   
+#追踪页面访问
+todo
+
+#自定义事件
+todo
+
