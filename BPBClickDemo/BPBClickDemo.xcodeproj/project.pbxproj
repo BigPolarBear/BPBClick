@@ -18,12 +18,14 @@
 		D5B0871D180D31FF00C68826 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B0871C180D31FF00C68826 /* DetailViewController.m */; };
 		D5B0871F180D31FF00C68826 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B0871E180D31FF00C68826 /* Images.xcassets */; };
 		D5B0873E180D326400C68826 /* BPBClick.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B0873D180D326400C68826 /* BPBClick.m */; };
-		D5C93D1C180D4A91009666D4 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D17180D4A91009666D4 /* libTalkingData.a */; };
-		D5C93D1D180D4A91009666D4 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D1A180D4A91009666D4 /* libMobClickLibrary.a */; };
 		D5C93D1F180D4D82009666D4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D1E180D4D82009666D4 /* libz.dylib */; };
 		D5C93D21180D4D8B009666D4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D20180D4D8B009666D4 /* Security.framework */; };
 		D5C93D23180D4D92009666D4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D22180D4D92009666D4 /* CoreTelephony.framework */; };
 		D5C93D25180D4D99009666D4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D24180D4D99009666D4 /* AdSupport.framework */; };
+		E8924F00180D85BF008E70D6 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8924EFA180D85BF008E70D6 /* libTalkingData.a */; };
+		E8924F01180D85BF008E70D6 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8924EFE180D85BF008E70D6 /* libMobClickLibrary.a */; };
+		E8924F07180D868B008E70D6 /* BPBClickServiceUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = E8924F06180D868B008E70D6 /* BPBClickServiceUmeng.m */; };
+		E8924F0A180D869E008E70D6 /* BPBClickServiceTalkingData.m in Sources */ = {isa = PBXBuildFile; fileRef = E8924F09180D869E008E70D6 /* BPBClickServiceTalkingData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,17 +46,21 @@
 		D5B0871C180D31FF00C68826 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D5B0871E180D31FF00C68826 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D5B08725180D31FF00C68826 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D5B0873C180D326400C68826 /* BPBClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPBClick.h; path = ../BPBClick.h; sourceTree = "<group>"; };
-		D5B0873D180D326400C68826 /* BPBClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPBClick.m; path = ../BPBClick.m; sourceTree = "<group>"; };
-		D5C93D17180D4A91009666D4 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
-		D5C93D18180D4A91009666D4 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
-		D5C93D1A180D4A91009666D4 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		D5C93D1B180D4A91009666D4 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		D5B0873C180D326400C68826 /* BPBClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPBClick.h; path = ../BPBClick/BPBClick.h; sourceTree = "<group>"; };
+		D5B0873D180D326400C68826 /* BPBClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPBClick.m; path = ../BPBClick/BPBClick.m; sourceTree = "<group>"; };
 		D5C93D1E180D4D82009666D4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D5C93D20180D4D8B009666D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D5C93D22180D4D92009666D4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D5C93D24180D4D99009666D4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		D5C93D26180D52BB009666D4 /* IBPBClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IBPBClick.h; path = ../IBPBClick.h; sourceTree = "<group>"; };
+		D5C93D26180D52BB009666D4 /* IBPBClickService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IBPBClickService.h; path = ../BPBClick/IBPBClickService.h; sourceTree = "<group>"; };
+		E8924EFA180D85BF008E70D6 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		E8924EFB180D85BF008E70D6 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		E8924EFE180D85BF008E70D6 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		E8924EFF180D85BF008E70D6 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		E8924F05180D868B008E70D6 /* BPBClickServiceUmeng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBClickServiceUmeng.h; sourceTree = "<group>"; };
+		E8924F06180D868B008E70D6 /* BPBClickServiceUmeng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBClickServiceUmeng.m; sourceTree = "<group>"; };
+		E8924F08180D869E008E70D6 /* BPBClickServiceTalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBClickServiceTalkingData.h; sourceTree = "<group>"; };
+		E8924F09180D869E008E70D6 /* BPBClickServiceTalkingData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBClickServiceTalkingData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +68,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8924F01180D85BF008E70D6 /* libMobClickLibrary.a in Frameworks */,
 				D5C93D25180D4D99009666D4 /* AdSupport.framework in Frameworks */,
 				D5C93D23180D4D92009666D4 /* CoreTelephony.framework in Frameworks */,
+				E8924F00180D85BF008E70D6 /* libTalkingData.a in Frameworks */,
 				D5C93D21180D4D8B009666D4 /* Security.framework in Frameworks */,
 				D5C93D1F180D4D82009666D4 /* libz.dylib in Frameworks */,
 				D5B08706180D31FF00C68826 /* CoreGraphics.framework in Frameworks */,
 				D5B08708180D31FF00C68826 /* UIKit.framework in Frameworks */,
-				D5C93D1C180D4A91009666D4 /* libTalkingData.a in Frameworks */,
 				D5B08704180D31FF00C68826 /* Foundation.framework in Frameworks */,
-				D5C93D1D180D4A91009666D4 /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,38 +146,58 @@
 		D5B0873B180D321D00C68826 /* BPBClick */ = {
 			isa = PBXGroup;
 			children = (
-				D5C93D15180D4A91009666D4 /* AnalyticsSDK */,
+				E8924EF7180D85BF008E70D6 /* AnalyticsSDK */,
+				D5B0873C180D326400C68826 /* BPBClick.h */,
+				D5B0873D180D326400C68826 /* BPBClick.m */,
+				D5C93D26180D52BB009666D4 /* IBPBClickService.h */,
 			);
 			name = BPBClick;
 			sourceTree = "<group>";
 		};
-		D5C93D15180D4A91009666D4 /* AnalyticsSDK */ = {
+		E8924EF7180D85BF008E70D6 /* AnalyticsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				D5B0873C180D326400C68826 /* BPBClick.h */,
-				D5B0873D180D326400C68826 /* BPBClick.m */,
-				D5C93D26180D52BB009666D4 /* IBPBClick.h */,
-				D5C93D16180D4A91009666D4 /* TalkingData_Analytics_iOS_SDK_V1.0.14 2 */,
-				D5C93D19180D4A91009666D4 /* UMAnalytics_Sdk_2.2.1.OpenUDID */,
+				E8924EF8180D85BF008E70D6 /* TalkingData */,
+				E8924EFC180D85BF008E70D6 /* Umeng */,
 			);
 			name = AnalyticsSDK;
-			path = ../BPBClick/AnalyticsSDK;
+			path = BPBClick/AnalyticsSDK;
 			sourceTree = "<group>";
 		};
-		D5C93D16180D4A91009666D4 /* TalkingData_Analytics_iOS_SDK_V1.0.14 2 */ = {
+		E8924EF8180D85BF008E70D6 /* TalkingData */ = {
 			isa = PBXGroup;
 			children = (
-				D5C93D17180D4A91009666D4 /* libTalkingData.a */,
-				D5C93D18180D4A91009666D4 /* TalkingData.h */,
+				E8924EF9180D85BF008E70D6 /* TalkingData_Analytics_iOS_SDK_V1.0.14 2 */,
+				E8924F08180D869E008E70D6 /* BPBClickServiceTalkingData.h */,
+				E8924F09180D869E008E70D6 /* BPBClickServiceTalkingData.m */,
+			);
+			path = TalkingData;
+			sourceTree = "<group>";
+		};
+		E8924EF9180D85BF008E70D6 /* TalkingData_Analytics_iOS_SDK_V1.0.14 2 */ = {
+			isa = PBXGroup;
+			children = (
+				E8924EFA180D85BF008E70D6 /* libTalkingData.a */,
+				E8924EFB180D85BF008E70D6 /* TalkingData.h */,
 			);
 			path = "TalkingData_Analytics_iOS_SDK_V1.0.14 2";
 			sourceTree = "<group>";
 		};
-		D5C93D19180D4A91009666D4 /* UMAnalytics_Sdk_2.2.1.OpenUDID */ = {
+		E8924EFC180D85BF008E70D6 /* Umeng */ = {
 			isa = PBXGroup;
 			children = (
-				D5C93D1A180D4A91009666D4 /* libMobClickLibrary.a */,
-				D5C93D1B180D4A91009666D4 /* MobClick.h */,
+				E8924F05180D868B008E70D6 /* BPBClickServiceUmeng.h */,
+				E8924F06180D868B008E70D6 /* BPBClickServiceUmeng.m */,
+				E8924EFD180D85BF008E70D6 /* UMAnalytics_Sdk_2.2.1.OpenUDID */,
+			);
+			path = Umeng;
+			sourceTree = "<group>";
+		};
+		E8924EFD180D85BF008E70D6 /* UMAnalytics_Sdk_2.2.1.OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				E8924EFE180D85BF008E70D6 /* libMobClickLibrary.a */,
+				E8924EFF180D85BF008E70D6 /* MobClick.h */,
 			);
 			path = UMAnalytics_Sdk_2.2.1.OpenUDID;
 			sourceTree = "<group>";
@@ -243,7 +269,9 @@
 			files = (
 				D5B08714180D31FF00C68826 /* AppDelegate.m in Sources */,
 				D5B0871A180D31FF00C68826 /* MasterViewController.m in Sources */,
+				E8924F07180D868B008E70D6 /* BPBClickServiceUmeng.m in Sources */,
 				D5B08710180D31FF00C68826 /* main.m in Sources */,
+				E8924F0A180D869E008E70D6 /* BPBClickServiceTalkingData.m in Sources */,
 				D5B0873E180D326400C68826 /* BPBClick.m in Sources */,
 				D5B0871D180D31FF00C68826 /* DetailViewController.m in Sources */,
 			);
@@ -355,6 +383,8 @@
 					"$(inherited)",
 					"/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/TalkingData_Analytics_iOS_SDK_V1.0.14\\ 2",
 					/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/UMAnalytics_Sdk_2.2.1.OpenUDID,
+					"/Users/BigPolarBear/Documents/github/BPBClick/BPBClickDemo/BPBClick/AnalyticsSDK/TalkingData/TalkingData_Analytics_iOS_SDK_V1.0.14\\ 2",
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClickDemo/BPBClick/AnalyticsSDK/Umeng/UMAnalytics_Sdk_2.2.1.OpenUDID,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -373,6 +403,8 @@
 					"$(inherited)",
 					"/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/TalkingData_Analytics_iOS_SDK_V1.0.14\\ 2",
 					/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/UMAnalytics_Sdk_2.2.1.OpenUDID,
+					"/Users/BigPolarBear/Documents/github/BPBClick/BPBClickDemo/BPBClick/AnalyticsSDK/TalkingData/TalkingData_Analytics_iOS_SDK_V1.0.14\\ 2",
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClickDemo/BPBClick/AnalyticsSDK/Umeng/UMAnalytics_Sdk_2.2.1.OpenUDID,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

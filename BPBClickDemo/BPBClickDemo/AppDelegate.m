@@ -7,11 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "BPBClick.h"
+
+#import "BPBClickServiceUmeng.h"
+#import "BPBClickServiceTalkingData.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    id<IBPBClickService> serviceUmeng = [[BPBClickServiceUmeng alloc] initWithAppKey:@"xxx"];
+    id<IBPBClickService> serviceTalkingData = [[BPBClickServiceTalkingData alloc] initWithAppKey:@"xxx"];
+
+    // 添加统计服务
+    [BPBClick addClickService:serviceUmeng];
+    [BPBClick addClickService:serviceTalkingData];
+    // 设置渠道
+    [BPBClick setChannelId:@"App Store"];
+    // 启动服务
+    [BPBClick start];
+
     // Override point for customization after application launch.
     return YES;
 }
