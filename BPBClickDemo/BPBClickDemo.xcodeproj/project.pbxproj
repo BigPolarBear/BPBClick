@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5B08704180D31FF00C68826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B08703180D31FF00C68826 /* Foundation.framework */; };
+		D5B08706180D31FF00C68826 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B08705180D31FF00C68826 /* CoreGraphics.framework */; };
+		D5B08708180D31FF00C68826 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B08707180D31FF00C68826 /* UIKit.framework */; };
+		D5B0870E180D31FF00C68826 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5B0870C180D31FF00C68826 /* InfoPlist.strings */; };
+		D5B08710180D31FF00C68826 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B0870F180D31FF00C68826 /* main.m */; };
+		D5B08714180D31FF00C68826 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B08713180D31FF00C68826 /* AppDelegate.m */; };
+		D5B08717180D31FF00C68826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B08715180D31FF00C68826 /* Main.storyboard */; };
+		D5B0871A180D31FF00C68826 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B08719180D31FF00C68826 /* MasterViewController.m */; };
+		D5B0871D180D31FF00C68826 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B0871C180D31FF00C68826 /* DetailViewController.m */; };
+		D5B0871F180D31FF00C68826 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B0871E180D31FF00C68826 /* Images.xcassets */; };
+		D5B0873E180D326400C68826 /* BPBClick.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B0873D180D326400C68826 /* BPBClick.m */; };
+		D5C93D1C180D4A91009666D4 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D17180D4A91009666D4 /* libTalkingData.a */; };
+		D5C93D1D180D4A91009666D4 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D1A180D4A91009666D4 /* libMobClickLibrary.a */; };
+		D5C93D1F180D4D82009666D4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D1E180D4D82009666D4 /* libz.dylib */; };
+		D5C93D21180D4D8B009666D4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D20180D4D8B009666D4 /* Security.framework */; };
+		D5C93D23180D4D92009666D4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D22180D4D92009666D4 /* CoreTelephony.framework */; };
+		D5C93D25180D4D99009666D4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D24180D4D99009666D4 /* AdSupport.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D5B08700180D31FF00C68826 /* BPBClickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPBClickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B08703180D31FF00C68826 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5B08705180D31FF00C68826 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5B08707180D31FF00C68826 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5B0870B180D31FF00C68826 /* BPBClickDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BPBClickDemo-Info.plist"; sourceTree = "<group>"; };
+		D5B0870D180D31FF00C68826 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5B0870F180D31FF00C68826 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5B08711180D31FF00C68826 /* BPBClickDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BPBClickDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D5B08712180D31FF00C68826 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5B08713180D31FF00C68826 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5B08716180D31FF00C68826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5B08718180D31FF00C68826 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		D5B08719180D31FF00C68826 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		D5B0871B180D31FF00C68826 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D5B0871C180D31FF00C68826 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D5B0871E180D31FF00C68826 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5B08725180D31FF00C68826 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5B0873C180D326400C68826 /* BPBClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPBClick.h; path = ../BPBClick.h; sourceTree = "<group>"; };
+		D5B0873D180D326400C68826 /* BPBClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPBClick.m; path = ../BPBClick.m; sourceTree = "<group>"; };
+		D5C93D17180D4A91009666D4 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		D5C93D18180D4A91009666D4 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		D5C93D1A180D4A91009666D4 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		D5C93D1B180D4A91009666D4 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		D5C93D1E180D4D82009666D4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D5C93D20180D4D8B009666D4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D5C93D22180D4D92009666D4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D5C93D24180D4D99009666D4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D5C93D26180D52BB009666D4 /* IBPBClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IBPBClick.h; path = ../IBPBClick.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5B086FD180D31FF00C68826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C93D25180D4D99009666D4 /* AdSupport.framework in Frameworks */,
+				D5C93D23180D4D92009666D4 /* CoreTelephony.framework in Frameworks */,
+				D5C93D21180D4D8B009666D4 /* Security.framework in Frameworks */,
+				D5C93D1F180D4D82009666D4 /* libz.dylib in Frameworks */,
+				D5B08706180D31FF00C68826 /* CoreGraphics.framework in Frameworks */,
+				D5B08708180D31FF00C68826 /* UIKit.framework in Frameworks */,
+				D5C93D1C180D4A91009666D4 /* libTalkingData.a in Frameworks */,
+				D5B08704180D31FF00C68826 /* Foundation.framework in Frameworks */,
+				D5C93D1D180D4A91009666D4 /* libMobClickLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5B086F7180D31FF00C68826 = {
+			isa = PBXGroup;
+			children = (
+				D5B0873B180D321D00C68826 /* BPBClick */,
+				D5B08709180D31FF00C68826 /* BPBClickDemo */,
+				D5B08702180D31FF00C68826 /* Frameworks */,
+				D5B08701180D31FF00C68826 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5B08701180D31FF00C68826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5B08700180D31FF00C68826 /* BPBClickDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5B08702180D31FF00C68826 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5C93D24180D4D99009666D4 /* AdSupport.framework */,
+				D5C93D22180D4D92009666D4 /* CoreTelephony.framework */,
+				D5C93D20180D4D8B009666D4 /* Security.framework */,
+				D5C93D1E180D4D82009666D4 /* libz.dylib */,
+				D5B08703180D31FF00C68826 /* Foundation.framework */,
+				D5B08705180D31FF00C68826 /* CoreGraphics.framework */,
+				D5B08707180D31FF00C68826 /* UIKit.framework */,
+				D5B08725180D31FF00C68826 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5B08709180D31FF00C68826 /* BPBClickDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D5B08712180D31FF00C68826 /* AppDelegate.h */,
+				D5B08713180D31FF00C68826 /* AppDelegate.m */,
+				D5B08715180D31FF00C68826 /* Main.storyboard */,
+				D5B08718180D31FF00C68826 /* MasterViewController.h */,
+				D5B08719180D31FF00C68826 /* MasterViewController.m */,
+				D5B0871B180D31FF00C68826 /* DetailViewController.h */,
+				D5B0871C180D31FF00C68826 /* DetailViewController.m */,
+				D5B0871E180D31FF00C68826 /* Images.xcassets */,
+				D5B0870A180D31FF00C68826 /* Supporting Files */,
+			);
+			path = BPBClickDemo;
+			sourceTree = "<group>";
+		};
+		D5B0870A180D31FF00C68826 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0870B180D31FF00C68826 /* BPBClickDemo-Info.plist */,
+				D5B0870C180D31FF00C68826 /* InfoPlist.strings */,
+				D5B0870F180D31FF00C68826 /* main.m */,
+				D5B08711180D31FF00C68826 /* BPBClickDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5B0873B180D321D00C68826 /* BPBClick */ = {
+			isa = PBXGroup;
+			children = (
+				D5C93D15180D4A91009666D4 /* AnalyticsSDK */,
+			);
+			name = BPBClick;
+			sourceTree = "<group>";
+		};
+		D5C93D15180D4A91009666D4 /* AnalyticsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0873C180D326400C68826 /* BPBClick.h */,
+				D5B0873D180D326400C68826 /* BPBClick.m */,
+				D5C93D26180D52BB009666D4 /* IBPBClick.h */,
+				D5C93D16180D4A91009666D4 /* TalkingData_Analytics_iOS_SDK_V1.0.14 2 */,
+				D5C93D19180D4A91009666D4 /* UMAnalytics_Sdk_2.2.1.OpenUDID */,
+			);
+			name = AnalyticsSDK;
+			path = ../BPBClick/AnalyticsSDK;
+			sourceTree = "<group>";
+		};
+		D5C93D16180D4A91009666D4 /* TalkingData_Analytics_iOS_SDK_V1.0.14 2 */ = {
+			isa = PBXGroup;
+			children = (
+				D5C93D17180D4A91009666D4 /* libTalkingData.a */,
+				D5C93D18180D4A91009666D4 /* TalkingData.h */,
+			);
+			path = "TalkingData_Analytics_iOS_SDK_V1.0.14 2";
+			sourceTree = "<group>";
+		};
+		D5C93D19180D4A91009666D4 /* UMAnalytics_Sdk_2.2.1.OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				D5C93D1A180D4A91009666D4 /* libMobClickLibrary.a */,
+				D5C93D1B180D4A91009666D4 /* MobClick.h */,
+			);
+			path = UMAnalytics_Sdk_2.2.1.OpenUDID;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5B086FF180D31FF00C68826 /* BPBClickDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B08735180D31FF00C68826 /* Build configuration list for PBXNativeTarget "BPBClickDemo" */;
+			buildPhases = (
+				D5B086FC180D31FF00C68826 /* Sources */,
+				D5B086FD180D31FF00C68826 /* Frameworks */,
+				D5B086FE180D31FF00C68826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BPBClickDemo;
+			productName = BPBClickDemo;
+			productReference = D5B08700180D31FF00C68826 /* BPBClickDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5B086F8180D31FF00C68826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = bigpolarbear.com;
+			};
+			buildConfigurationList = D5B086FB180D31FF00C68826 /* Build configuration list for PBXProject "BPBClickDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5B086F7180D31FF00C68826;
+			productRefGroup = D5B08701180D31FF00C68826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5B086FF180D31FF00C68826 /* BPBClickDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5B086FE180D31FF00C68826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B0871F180D31FF00C68826 /* Images.xcassets in Resources */,
+				D5B0870E180D31FF00C68826 /* InfoPlist.strings in Resources */,
+				D5B08717180D31FF00C68826 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5B086FC180D31FF00C68826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B08714180D31FF00C68826 /* AppDelegate.m in Sources */,
+				D5B0871A180D31FF00C68826 /* MasterViewController.m in Sources */,
+				D5B08710180D31FF00C68826 /* main.m in Sources */,
+				D5B0873E180D326400C68826 /* BPBClick.m in Sources */,
+				D5B0871D180D31FF00C68826 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5B0870C180D31FF00C68826 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B0870D180D31FF00C68826 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5B08715180D31FF00C68826 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B08716180D31FF00C68826 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5B08733180D31FF00C68826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D5B08734180D31FF00C68826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5B08736180D31FF00C68826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BPBClickDemo/BPBClickDemo-Prefix.pch";
+				INFOPLIST_FILE = "BPBClickDemo/BPBClickDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/TalkingData_Analytics_iOS_SDK_V1.0.14\\ 2",
+					/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/UMAnalytics_Sdk_2.2.1.OpenUDID,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5B08737180D31FF00C68826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BPBClickDemo/BPBClickDemo-Prefix.pch";
+				INFOPLIST_FILE = "BPBClickDemo/BPBClickDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/TalkingData_Analytics_iOS_SDK_V1.0.14\\ 2",
+					/Users/hxcade/Documents/GitHub/BPBClick/BPBClick/AnalyticsSDK/UMAnalytics_Sdk_2.2.1.OpenUDID,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5B086FB180D31FF00C68826 /* Build configuration list for PBXProject "BPBClickDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B08733180D31FF00C68826 /* Debug */,
+				D5B08734180D31FF00C68826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B08735180D31FF00C68826 /* Build configuration list for PBXNativeTarget "BPBClickDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B08736180D31FF00C68826 /* Debug */,
+				D5B08737180D31FF00C68826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5B086F8180D31FF00C68826 /* Project object */;
+}
