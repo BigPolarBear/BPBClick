@@ -41,6 +41,6 @@
  */
 +(void)event:(NSString*)eventCode
        label:(NSString*)label
-  attributes:(NSDictionary*(^)(void))attributesBlock;
+  attributesBlock:(NSDictionary*(^)(void))attributesBlock;
 
 @end

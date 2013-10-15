@@ -91,14 +91,12 @@
 }
 
 #pragma mark （可选）自定义事件
-+(void)event:(NSString*)eventCode
-       label:(NSString*)label
-  attributes:(NSDictionary*(^)(void))attributesBlock
++(void)event:(NSString*)eventCode label:(NSString*)label attributesBlock:(NSDictionary*(^)(void))attributesBlock
 {
 
     [[self sharedInstance].listService enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         id<IBPBClickService> service = obj;
-        [service event:eventCode label:label attributes:attributesBlock];
+        [service event:eventCode label:label attributesBlock:attributesBlock];
     }];
 }
 

@@ -62,9 +62,7 @@
 }
 
 #pragma mark （可选）自定义事件
--(void)event:(NSString*)eventCode
-       label:(NSString*)label
-  attributes:(NSDictionary*(^)(void))attributesBlock
+-(void)event:(NSString*)eventCode label:(NSString*)label attributesBlock:(NSDictionary*(^)(void))attributesBlock
 {
     NSDictionary* dict = nil;
     if (attributesBlock) {

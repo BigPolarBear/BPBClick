@@ -36,11 +36,9 @@
  
  @param event   事件代码
  @param label   事件标签（TalkingData都支持；友盟在传attributs时，不支持label；）
- @param attributes  事件属性
+ @param attributesBlock  事件属性
  */
--(void)event:(NSString*)eventCode
-       label:(NSString*)label
-  attributes:(NSDictionary*(^)(void))attributesBlock;
+-(void)event:(NSString*)eventCode label:(NSString*)label attributesBlock:(NSDictionary*(^)(void))attributesBlock;
 
 
 @end

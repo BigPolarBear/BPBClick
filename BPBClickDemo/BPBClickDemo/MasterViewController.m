@@ -122,9 +122,9 @@
 
         [BPBClick event:@"show_detail"
                   label:@"segue"
-             attributes:^NSDictionary *{
-                 return @{@"indexPath":[NSString stringWithFormat:@"%d",indexPath.row]};
-             }];
+        attributesBlock:^NSDictionary *{
+            return @{@"indexPath":[NSString stringWithFormat:@"%d",indexPath.row]};
+        }];
     }
 }
 
