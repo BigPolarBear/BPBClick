@@ -22,6 +22,8 @@
 
 在AppDelegate的didFinishLaunchingWithOptions里添加如下代码
 
+```objective-c
+
 	    // 1. 创建需要的统计服务
 	    id<IBPBClickService> serviceUmeng = [[BPBClickServiceUmeng alloc] initWithAppKey:@"525d62a956240b4bce01789c"];
 	    id<IBPBClickService> serviceTalkingData = [[BPBClickServiceTalkingData alloc] initWithAppKey:@"B083E38FCCA43F368148464F2CEFE91E"];
@@ -37,21 +39,29 @@
 	#endif
 	    // 4. 启动服务
 	    [BPBClick start];
+```
 	    
 	   
 #追踪页面访问
 在ViewController的viewWillAppear或viewDidAppear中，添加代码
 
+```objective-c
+
 	[BPBClick trackPageBegin:@"页面名称"];
-	
+```	
 	
 在ViewController的viewWillDisappear或viewDidDisappear中，添加代码
 
+```objective-c
+
 	[BPBClick trackPageEnd:@"页面名称"];
-	
+```
 
 #自定义事件
+
 在事件触发的位置，添加事件代码
+
+```objective-c
 
 	[BPBClick event:@"事件代码"
 	          label:@"事件标签"
@@ -59,4 +69,5 @@
 	                 return @{@"事件属性1":@"值1",@"事件属性2":@"值2"};
 	             }];
 	             
+```
 *注意：对于友盟平台，事件代码需事先到平台的自定义事件中先定义，并且attributes有返回值时，label的内容会忽略*
