@@ -40,5 +40,17 @@
  */
 -(void)event:(NSString*)eventCode label:(NSString*)label attributesBlock:(NSDictionary*(^)(void))attributesBlock;
 
+/** 发送自定义事件（这里的事件属性通过block传递，防止Key或Value为nil导致的App崩溃）
+ 
+ @param event   事件代码
+ */
+-(void)event:(NSString*)eventCode;
+
+/** 发送自定义事件（这里的事件属性通过block传递，防止Key或Value为nil导致的App崩溃）
+ 
+ @param event   事件代码
+ @param label   事件标签（TalkingData都支持；友盟在传attributs时，不支持label；）
+ */
+-(void)event:(NSString*)eventCode label:(NSString*)label;
 
 @end

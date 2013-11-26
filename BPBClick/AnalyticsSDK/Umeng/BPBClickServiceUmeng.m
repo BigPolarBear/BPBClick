@@ -79,4 +79,14 @@
     }
 }
 
+-(void)event:(NSString*)eventCode
+{
+    [self event:eventCode label:nil attributesBlock:nil];
+}
+
+-(void)event:(NSString*)eventCode label:(NSString*)label
+{
+    [self event:eventCode label:label attributesBlock:nil];
+}
+
 @end
