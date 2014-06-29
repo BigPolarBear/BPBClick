@@ -23,10 +23,10 @@
 		D5C93D23180D4D92009666D4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D22180D4D92009666D4 /* CoreTelephony.framework */; };
 		D5C93D25180D4D99009666D4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C93D24180D4D99009666D4 /* AdSupport.framework */; };
 		D5CF6CFD1844BDE70048102F /* BPBClickServiceTalkingData.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CF6CF31844BDE70048102F /* BPBClickServiceTalkingData.m */; };
-		D5CF6CFE1844BDE70048102F /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CF6CF51844BDE70048102F /* libTalkingData.a */; };
 		D5CF6CFF1844BDE70048102F /* BPBClickServiceUmeng.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CF6CF91844BDE70048102F /* BPBClickServiceUmeng.m */; };
-		D5CF6D001844BDE70048102F /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CF6CFB1844BDE70048102F /* libMobClickLibrary.a */; };
 		D5CF6D041844C3300048102F /* BPBClickServiceCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CF6D031844C3300048102F /* BPBClickServiceCustom.m */; };
+		E82B8D3C19606DA900107E26 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E82B8D3A19606DA900107E26 /* libTalkingData.a */; };
+		E82B8D3F19606DC600107E26 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E82B8D3D19606DC600107E26 /* libMobClickLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,14 +56,14 @@
 		D5C93D26180D52BB009666D4 /* IBPBClickService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IBPBClickService.h; path = ../BPBClick/IBPBClickService.h; sourceTree = "<group>"; };
 		D5CF6CF21844BDE70048102F /* BPBClickServiceTalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBClickServiceTalkingData.h; sourceTree = "<group>"; };
 		D5CF6CF31844BDE70048102F /* BPBClickServiceTalkingData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBClickServiceTalkingData.m; sourceTree = "<group>"; };
-		D5CF6CF51844BDE70048102F /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
-		D5CF6CF61844BDE70048102F /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		D5CF6CF81844BDE70048102F /* BPBClickServiceUmeng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBClickServiceUmeng.h; sourceTree = "<group>"; };
 		D5CF6CF91844BDE70048102F /* BPBClickServiceUmeng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBClickServiceUmeng.m; sourceTree = "<group>"; };
-		D5CF6CFB1844BDE70048102F /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		D5CF6CFC1844BDE70048102F /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		D5CF6D021844C3300048102F /* BPBClickServiceCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBClickServiceCustom.h; sourceTree = "<group>"; };
 		D5CF6D031844C3300048102F /* BPBClickServiceCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBClickServiceCustom.m; sourceTree = "<group>"; };
+		E82B8D3A19606DA900107E26 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		E82B8D3B19606DA900107E26 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
+		E82B8D3D19606DC600107E26 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		E82B8D3E19606DC600107E26 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +71,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CF6D001844BDE70048102F /* libMobClickLibrary.a in Frameworks */,
+				E82B8D3F19606DC600107E26 /* libMobClickLibrary.a in Frameworks */,
 				D5C93D25180D4D99009666D4 /* AdSupport.framework in Frameworks */,
 				D5C93D23180D4D92009666D4 /* CoreTelephony.framework in Frameworks */,
-				D5CF6CFE1844BDE70048102F /* libTalkingData.a in Frameworks */,
 				D5C93D21180D4D8B009666D4 /* Security.framework in Frameworks */,
 				D5C93D1F180D4D82009666D4 /* libz.dylib in Frameworks */,
 				D5B08706180D31FF00C68826 /* CoreGraphics.framework in Frameworks */,
 				D5B08708180D31FF00C68826 /* UIKit.framework in Frameworks */,
+				E82B8D3C19606DA900107E26 /* libTalkingData.a in Frameworks */,
 				D5B08704180D31FF00C68826 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,39 +171,23 @@
 		D5CF6CF11844BDE70048102F /* TalkingData */ = {
 			isa = PBXGroup;
 			children = (
+				E82B8D3A19606DA900107E26 /* libTalkingData.a */,
+				E82B8D3B19606DA900107E26 /* TalkingData.h */,
 				D5CF6CF21844BDE70048102F /* BPBClickServiceTalkingData.h */,
 				D5CF6CF31844BDE70048102F /* BPBClickServiceTalkingData.m */,
-				D5CF6CF41844BDE70048102F /* TalkingData_Analytics_iOS_SDK_V1.0.14 */,
 			);
 			path = TalkingData;
-			sourceTree = "<group>";
-		};
-		D5CF6CF41844BDE70048102F /* TalkingData_Analytics_iOS_SDK_V1.0.14 */ = {
-			isa = PBXGroup;
-			children = (
-				D5CF6CF51844BDE70048102F /* libTalkingData.a */,
-				D5CF6CF61844BDE70048102F /* TalkingData.h */,
-			);
-			path = TalkingData_Analytics_iOS_SDK_V1.0.14;
 			sourceTree = "<group>";
 		};
 		D5CF6CF71844BDE70048102F /* Umeng */ = {
 			isa = PBXGroup;
 			children = (
+				E82B8D3D19606DC600107E26 /* libMobClickLibrary.a */,
+				E82B8D3E19606DC600107E26 /* MobClick.h */,
 				D5CF6CF81844BDE70048102F /* BPBClickServiceUmeng.h */,
 				D5CF6CF91844BDE70048102F /* BPBClickServiceUmeng.m */,
-				D5CF6CFA1844BDE70048102F /* UMAnalytics_Sdk_2.2.1.OpenUDID */,
 			);
 			path = Umeng;
-			sourceTree = "<group>";
-		};
-		D5CF6CFA1844BDE70048102F /* UMAnalytics_Sdk_2.2.1.OpenUDID */ = {
-			isa = PBXGroup;
-			children = (
-				D5CF6CFB1844BDE70048102F /* libMobClickLibrary.a */,
-				D5CF6CFC1844BDE70048102F /* MobClick.h */,
-			);
-			path = UMAnalytics_Sdk_2.2.1.OpenUDID;
 			sourceTree = "<group>";
 		};
 		D5CF6D011844C3300048102F /* Custom */ = {
@@ -397,6 +381,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/../BPBClick/AnalyticsSDK/TalkingData/TalkingData_Analytics_iOS_SDK_V1.0.14",
 					"$(SRCROOT)/../BPBClick/AnalyticsSDK/Umeng/UMAnalytics_Sdk_2.2.1.OpenUDID",
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClick/AnalyticsSDK/Umeng/UMAnalytics_Sdk_3.1.2,
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClick/AnalyticsSDK/TalkingData,
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClick/AnalyticsSDK/Umeng,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -415,6 +402,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/../BPBClick/AnalyticsSDK/TalkingData/TalkingData_Analytics_iOS_SDK_V1.0.14",
 					"$(SRCROOT)/../BPBClick/AnalyticsSDK/Umeng/UMAnalytics_Sdk_2.2.1.OpenUDID",
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClick/AnalyticsSDK/Umeng/UMAnalytics_Sdk_3.1.2,
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClick/AnalyticsSDK/TalkingData,
+					/Users/BigPolarBear/Documents/github/BPBClick/BPBClick/AnalyticsSDK/Umeng,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
